@@ -1,0 +1,8 @@
+--cpu Cortex-M4.fp
+".\startup_stm32f30x.o"
+".\stm32f303xe.o"
+".\tester_v1.o"
+--library_type=microlib --strict --scatter ".\tester_v1.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\tester_v1.map" -o .\tester_v1.axf

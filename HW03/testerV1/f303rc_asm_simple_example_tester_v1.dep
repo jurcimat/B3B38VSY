@@ -1,0 +1,5 @@
+Dependencies for Project 'f303rc_asm_simple_example', Target 'tester_v1': (DO NOT MODIFY !)
+F (.\startup_stm32f30x.s)(0x5D8CEE48)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F30x--list .\startup_stm32f30x.lst --xref -o .\startup_stm32f30x.o --depend .\startup_stm32f30x.d)
+F (.\stm32f303xe.s)(0x5D8CEE48)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F30x--list .\stm32f303xe.lst --xref -o .\stm32f303xe.o --depend .\stm32f303xe.d)
+F (.\tester_v1.s)(0x5DC5926E)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F30x--list .\tester_v1.lst --xref -o .\tester_v1.o --depend .\tester_v1.d)
+I (stm32f303xe.s)(0x5D8CEE48)
