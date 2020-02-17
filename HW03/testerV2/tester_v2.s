@@ -20,15 +20,15 @@
 	area user_variables, data, readwrite, align=5 ;
 	export VAR_BUFFER 
 VAR_BUFFER SPACE 32 ; Inicializacia bufferu, kde budu ulozene nasledovne hodnoty
-					; Index			|		 0			|		 1			|		 2			|		 3			|		 4			|
-					; Ulozene data	|  pocet spravnych  |  pocet spravnych  |  pocet chybnych   | index	nameranej	| index	nameranej	|
-					;				|	stlaceni TL1	|	stlaceni TL2	| stlaceni TL1/TL2  | 	 hodnoty R1     | 	hodnoty R2		|
+					; Index			|	0	 	|	1		|	2		|	3		|		4		|
+					; Ulozene data		|  	pocet spravnych	|  pocet spravnych  	|  pocet chybnych   	|	index nameranej	| 	index	nameranej	|
+					;			|	stlaceni TL1	|	stlaceni TL2	| stlaceni TL1/TL2  	| 	 hodnoty R1     | 	hodnoty R2		|
 	area STM32F3xx, code, readonly
 	get stm32f303xe.s
 
-; Definované casove konstanty
+; DefinovanÃ© casove konstanty
 TIME_LIMIT EQU	571429			; Limit 0.5s na reakciu uzivatela, pri prekroceni tohoto casu -> chybny pokus
-TIME_LIMIT_HALF_SEC EQU	1666667 ; Limit predstavujúci pol sekundy						
+TIME_LIMIT_HALF_SEC EQU	1666667 ; Limit predstavujÃºci pol sekundy						
 START_FREQUENCY_TIME EQU 150000 ; Casova konstanta na dobu blikania pri prvotnom spusteni programu
 
 ; ASCII konstanty pre vstup z klavesnice
@@ -76,7 +76,7 @@ ENTRY
 	
 ;********************************************
 ;* Function:	MAIN
-;* Brief:		Hlavná vetva programu
+;* Brief:		HlavnÃ¡ vetva programu
 ;* Input:		None
 ;* Output:		None
 ;********************************************
@@ -243,7 +243,7 @@ CHECK_IF_S_AGAIN					; Kontrola ci dany znak je "s"
 ;********************************************
 ;* Function:	WAIT 
 ;* Brief:		Cakanie s dlzkou podla poctu 
-;* 				opakovaní nastavených 
+;* 				opakovanÃ­ nastavenÃ½ch 
 ;*				v registry R2
 ;* Input:		None
 ;* Output:		None
@@ -542,7 +542,7 @@ START_UP_FLASHING PROC
 
 ;********************************************
 ;* Function:	TURN_ON
-;* Brief:		Dá logicku 1 na pin danej LED,
+;* Brief:		DÃ¡ logicku 1 na pin danej LED,
 ;*				-> zasvieti LED
 ;* Input:		Na register R2 ide maska LED,
 ;*				ktoru chceme zapnut 
@@ -559,7 +559,7 @@ TURN_ON	PROC
 	ENDP	
 ;********************************************
 ;* Function:	TURN_OFF
-;* Brief:		Dá logicku 0 na pin danej LED,
+;* Brief:		DÃ¡ logicku 0 na pin danej LED,
 ;*				-> Zhasne LED
 ;* Input:		Na register R2 ide maska LED,
 ;*				ktoru chceme vypnut 
@@ -605,7 +605,7 @@ LOOP
 ;* Brief:		Procedura inicializujuca piny PA5 - PA7,
 ;*				nastavuje UART na komunikaciu s PC an pinoch PA2 a PA3,
 ;*				nastavuje a spusta periferiu TIMER1
-;*              kód je inspirovany zo vzoroveho kodu od Jana Svetlika led_example.s
+;*              kÃ³d je inspirovany zo vzoroveho kodu od Jana Svetlika led_example.s
 ;* Input:		None
 ;* Output:		None
 ;********************************************
